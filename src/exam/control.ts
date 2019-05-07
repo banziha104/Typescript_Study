@@ -1,42 +1,28 @@
-# 제어문 
+/***
+ * 조건문
+ */
 
-<br>
-
-## if
-
-```typescript
-
-let command = 0;
-
-if(command == 0){
-    
-}else {
-    
-}
-```
-
-<br>
-
-## Switch
-
-```typescript
 let command : number = 0;
 
+if ( command == 0 ){
+
+} else {
+
+}
+
 switch (command) {
-    case 0 : 
+    case 0 :
         break;
-    case 1 : 
+    case 1 :
         break;
     case 2 :
         break;
 }
-``` 
 
-<br>
 
-## for 문
-
-```typescript
+/***
+ * 반복문
+ */
 
 let arr : string[] = ["l","y","j"];
 
@@ -53,4 +39,3 @@ for ( let a of arr){ // for .. of 문은 값을 가져옮
     console.log(a);
 }
 
-```

@@ -1,13 +1,10 @@
-let a = 10;
-let b = {
-    abc: "abc",
-    bcd: 3
-};
-let { abc } = b;
-console.log(abc);
-let anyVar; // anyVar : any 와같음
-let numbers = [1, 2, 3]; // 배열
-let gNumbers = [1, 2, 3]; // 제너릭 배열
-let tuple = ["t", 1]; // 튜플
-let tuples = [["t", 1], ["t2", 2]];
-console.log(typeof tuples);
+let arr = ["l", "y", "j"];
+for (let i = 0; i < 3; i++) { // 기본적인 for 문
+    console.log(i);
+}
+for (let a in arr) { // for .. in 문은 인덱스를 가져옮
+    console.log(a);
+}
+for (let a of arr) { // for .. of 문은 값을 가져옮
+    console.log(a);
+}
