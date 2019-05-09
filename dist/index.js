@@ -1,11 +1,10 @@
-class Rectangle {
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const rxjs_1 = require("rxjs");
+let subject = new rxjs_1.BehaviorSubject("a");
+subject.next("b");
+subject.subscribe({
+    next: value => {
+        console.log(value);
     }
-    getArea() {
-        return this.x * this.y;
-    }
-}
-let rec = new Rectangle(10, 100);
-console.log(rec.getArea());
+});

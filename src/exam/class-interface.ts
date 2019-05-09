@@ -47,3 +47,8 @@ interface FunctionInterface {
 let functionInterface : FunctionInterface = function (str : string) : string {
     return str
 }
+
+declare function dD(str : string) : string;
+
+
+
